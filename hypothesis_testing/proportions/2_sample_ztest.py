@@ -14,6 +14,7 @@ stat, p_value = proportions_ztest(
 	)
 
 print('stat: %0.5f, p_value: %0.5f, critical_value: %0.5 f' % (stat, p_value, critical_value))
+
 if stat > critical_value or stat < critical_value *-1:
 	print("Reject the null hypothesis")
 else:
